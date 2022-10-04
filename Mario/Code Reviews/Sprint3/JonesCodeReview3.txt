@@ -1,0 +1,23 @@
+Dan Jones -- Code review
+
+Author of Code:  
+Date: 11/09/2021
+Sprint: 4
+File name: spriteTemplate.cs
+Author: Oskar Klear
+
+Comments: 
+
+- It's an effort to simplify sprites but most sprites don't update the same way which I feel like
+	complicates the whole process. Also adding new methods non-standard like gravity, animate, drawsprite, etc
+	complicates it more. It caused the most disgusting merge I've ever seen when we finished working on a lot of different sprites.
+
+- Also the Top/Bottom/Left/RightCollide functions calling touchRightOf inside of it is confusing and needlessly
+	complex. To me it seems like he got carried away with the simplifications. 
+
+- All that aside, the code looks very clean, low cyclomatic complexity, and not very smelly. I do think some of these
+	methods should be consolidated back into their standard functions like Collision
+
+
+
+Mins taken: 
